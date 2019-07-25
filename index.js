@@ -21,7 +21,7 @@ const currentLine = (line) => {
 
   if (!line.length) return "The line is currently empty.";
 
-  line.forEach((val,idx) => str += ` ${idx+1}. ${val}`);
+  line.forEach((val,idx) => str += ` ${idx+1}. ${val},`);
 
-  return str
+  return str.slice(0,-1)
 }
