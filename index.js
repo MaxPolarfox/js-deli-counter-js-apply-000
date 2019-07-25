@@ -19,7 +19,7 @@ const currentLine = (line) => {
 
   let str = 'The line is currently:';
 
-  if (line.length) return "The line is currently empty.";
+  if (!line.length) return "The line is currently empty.";
 
   line.forEach((val,idx) => str += ` ${idx}. ${name}`);
 
